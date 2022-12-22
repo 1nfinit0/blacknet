@@ -1,7 +1,11 @@
 * {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  text-decoration: none;
+}
+:root {
+  font-size: 62.5%;
 }
 html {
   font-size: 62.5%;
@@ -10,7 +14,6 @@ html {
 }
 body {
   width: 100%;
-  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -43,10 +46,95 @@ body > * {
 
 header {
   background-color: black;
+  position: relative;
 }
+header .header__portada--backgroundimg {
+  background-image: url("./1010/imgs/portada_don_belisario.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  max-width: 640px;
+  height: 20rem;
+  margin: 0 auto;
+  position: relative;
+  box-shadow: 0 0 10px 0 black;
+}
+header .header__information {
+  position: absolute;
+  width: 100%;
+  top: 14rem;
+  display: flex;
+  flex-direction: column;
+  color: #ffffff;
+  padding: 0px 0px 0px 5px;
+}
+header .header__information .logo_button {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+header .header__information .logo_button .logo {
+  width: 11rem;
+  height: 11rem;
+  padding: 3px;
+  border-radius: 100%;
+  box-shadow: 1px 14px 47px 9px rgba(0,0,0,0.49);
+  background-color: white;
+  border: solid black 2px;
+}
+header .header__information .logo_button .a_container{
+  padding: 75px 0px 0px 0px;
+}
+header .header__information .logo_button .a_container a {
+  width: 30px;
+  height: 30px;
+  margin-right: 20px;
+}
+header .header__information .logo_button .whatsapp {
+  background-image: url("./1010/imgs/whatsapp-svgrepo-com.svg");
+}
+header .header__information .logo_button .share {
+  background-image: url("./1010/imgs/call-svgrepo-com.svg");
+  filter: invert(1);
+}
+header .header__information h1 {
+  margin-top: 2px;
+  font-size: 2.8rem;
+}
+header .header__information div {
+  display: flex;
+  flex-direction: column;
+}
+header .header__information div>div{
+  display: flex;
+  flex-direction: row;
+}
+header .header__information div>div>img {
+  width: 15px;
+  margin-right: 5px;
+  filter: invert(1);
+}
+header .header__information div>div p {
+  font-size: 1.4rem;
+  color: #c4c4c4;
+}
+
+
 main {
-  background-color: blue;
+  background-color: rgb(0, 0, 0);
+  min-height: calc(100vh - 20rem);
+  padding-top: 190px;
 }
+main p {
+  width: 100%;
+  font-size: 3.5rem;
+  color: #ffffff;
+  font-style: italic;
+  text-align: center;
+}
+
 footer {
   background-color: blueviolet;
+  min-height: 100vh;
 }
