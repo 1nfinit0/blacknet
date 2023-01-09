@@ -68,6 +68,7 @@ header .header__information {
   flex-direction: column;
   color: #ffffff;
   padding: 0px 0px 0px 5px;
+  max-width: 900px;
 }
 header .header__information .logo_button {
   display: flex;
@@ -124,17 +125,79 @@ header .header__information div>div p {
 main {
   background-color: rgb(0, 0, 0);
   min-height: calc(100vh - 20rem);
-  padding-top: 190px;
+  padding: 0 10px;
 }
-main p {
+main .botones {
   width: 100%;
-  font-size: 3.5rem;
-  color: #ffffff;
-  font-style: italic;
-  text-align: center;
+  height: 250px;
+  margin: 200px auto 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
 }
-
+main .botones button {
+  padding: 0;
+  border: none;
+  background: none;
+}
+main .botones .descuento {
+  background-image: url("./1010/imgs/descuento.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 200px;
+  height: 100px;
+}
+main .botones .descuento p {
+  font-size: 1.6rem;
+  margin-left: 70px;
+}
+main .botones .menu {
+  background-image: url("./1010/imgs/menu.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 200px;
+  height: 100px;
+}
+main .botones .menu p {
+  font-size: 1.6rem;
+  margin-left: 65px;
+}
+main .promociones__caja {
+  width: 100%;
+  height: auto;
+  margin: 100px auto;
+}
+main .promociones__caja h3 {
+  color: #c4c4c4;
+  font-size: 2.5rem;
+  font-style: italic;
+  margin-left: 10px;
+}
+main .promociones__caja .promos__unidades {
+  margin: 30px 5px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+}
+main .promociones__caja .promos__unidades .promo {
+  width: 150px;
+  height: 230px;
+  background-color: #c4c4c4;
+  border-radius: 20px;
+  margin: 5px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main .promociones__caja .promos__unidades .promo img {
+  width: 100%;
+}
 footer {
   background-color: blueviolet;
-  min-height: 100vh;
+  min-height: 200px;
 }
