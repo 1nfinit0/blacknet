@@ -186,18 +186,209 @@ main .promociones__caja .promos__unidades {
 main .promociones__caja .promos__unidades .promo {
   width: 150px;
   height: 230px;
-  background-color: #c4c4c4;
+  background-color: #000000;
   border-radius: 20px;
-  margin: 5px;
+  margin: 15px 5px;
   overflow: hidden;
   display: flex;
   flex-direction: column;
   align-items: center;
+  -webkit-box-shadow: 0px 0px 20px 2px rgba(255,255,255,0.81);
+  -moz-box-shadow: 0px 0px 20px 2px rgba(255,255,255,0.81);
+  box-shadow: 0px 0px 20px 2px rgba(255,255,255,0.81);
 }
 main .promociones__caja .promos__unidades .promo img {
   width: 100%;
 }
+main .promociones__caja .promos__unidades .promo .info {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .promociones__caja .promos__unidades .promo .info .precio {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+main .promociones__caja .promos__unidades .promo .info .precio .titulo {
+  color: rgb(255, 255, 255);
+  font-size: 1.7rem;
+  margin: 0;
+}
+main .promociones__caja .promos__unidades .promo .info .precio .antes {
+  font-size: 1.3rem;
+  color: #c4c4c4;
+}
+main .promociones__caja .promos__unidades .promo .info .precio .antes del {
+  text-decoration: line-through;
+  color: rgb(252, 116, 116);
+}
+main .promociones__caja .promos__unidades .promo .info .precio .hoy {
+  font-size: 1.8rem;
+  color: rgb(255, 218, 126);
+  font-weight: bold;
+}
+
+main .menu__caja {
+  width: 100%;
+  height: calc(100vh - 150px);
+  border-radius: 15px;
+  background: linear-gradient(216deg, rgba(15,24,99,1) 0%, rgba(48,8,50,1) 49%, rgba(0,0,0,1) 100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px 5px;
+}
+main .menu__caja>h3 {
+  color: #c4c4c4;
+  font-size: 2.5rem;
+  font-style: italic;
+  padding: 5px;
+  margin-top: 10px;
+}
+main .menu__caja .menu__lista {
+  width: 100%;
+  height: 50px;
+}
+main .menu__caja .entrada {
+  width: 100%;
+  min-width: 200px;
+  max-width: 400px;
+  display: flex;
+  flex-direction: row;
+  margin: 0 auto;
+}
+.entrada .buscador {
+  width: 90%;
+  max-width: 300px;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+}
+.buscador input {
+      width: 100%;
+      height: 30px;
+      min-width: 150px;
+      max-width: 400px;
+      padding: 0 10px;
+      border: none;
+      background: transparent;
+      color: white;  
+}
+.buscador input:focus {
+  outline: none;
+}
+.buscador hr {
+  width: 100%;
+  max-width: 400px;
+  min-width: 200px;
+  border: none;
+  height: 1px;
+  background: rgba(255, 255, 255, 0.452);
+  margin: 0 auto 20px auto;
+}
+.entrada #boton {
+  width: 10%;
+  background-image: url("./1010/imgs/search.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  filter: invert(1);
+  margin-right: 10px;
+}
+main .proyectos {
+  width: 100%;
+  max-width: 1000px;
+  height: 100%;
+  margin: 0px 10px 10px 10px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px;
+  background-color: rgba(0, 0, 0, 0.244);
+  overflow: scroll;
+}
+
+/*
+CSS del menu contextuaLXDXD
+*/
+.proyecto {
+  width: 100%;
+  display: flex;
+  padding: 10px ;
+}
+.proyectos {
+  color: #ffffff;
+  font-size: 1,5rem;
+}
+.proyecto > .servicio {
+  width: 10%;
+  min-width: 70px;
+  min-height: 70px;
+  display: flex;
+}
+.proyecto .servicio img {
+ width: 100%;
+ margin: auto;
+}
+.proyecto .descripcion {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  padding: 2px 10px;
+  margin: 0px auto 0px 5px;
+  justify-content: space-around;
+}
+.descripcion .name {
+  text-decoration: none;
+}
+.descripcion .name h3{
+  color: white;
+  font-size: 1.5rem;
+  padding: 1px 0;
+}
+.descripcion p {
+  font-size: 1.5rem;
+  padding: 1px 0;
+}
+.descripcion h4 {
+  font-size: 1.7rem;
+  padding: 1px 0;
+}
+.descripcion .formatos {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.formatos > div {
+  margin: 5px;
+  border-radius: 4px;
+  padding: 2px 3px;
+}
+.formatos .price {
+  background-color: rgb(235, 200, 3);
+  color: rgb(76, 3, 3);
+  font-weight: 400;
+}
+.proyectos hr {
+  margin: 0 auto;
+  width: 99%;
+  border: none;
+  height: 1px;
+  background: rgba(255, 255, 255, 0.112);
+}
+
+
+
+
 footer {
-  background-color: blueviolet;
+  background-color: rgb(0, 0, 0);
   min-height: 200px;
 }

@@ -54,11 +54,11 @@
 
   <main>
     <div class="botones">
-      <button class="descuento">
+      <button class="descuento" id="combo">
         <p>Promociones</p>
       </button>
-      <button class="menu">
-        <p>Menú</p>
+      <button class="menu" id="lista">
+        <p>Carta</p>
       </button>
     </div>
     <div class="promociones__caja">
@@ -66,19 +66,67 @@
       <div class="promos__unidades">
         <div class="promo promo_1">
           <img src="./1010/imgs/don_belisario_promo_1.jpg" alt="Error">
+          <div class="info">
+            <div class="precio">
+              <h3 class="titulo">Promo Web 1</h3>
+              <p class="antes">Antes&nbsp;<del>S/. 109.90</del></p>
+              <p class="hoy">S/. 79.90</p>
+            </div>
+          </div>
         </div>
         <div class="promo promo_2">
           <img src="./1010/imgs/don_belisario_promo_2.jpg" alt="Error">
+          <div class="info">
+            <div class="precio">
+              <h3 class="titulo">Beli Bembos</h3>
+              <p class="hoy">S/. 79.90</p>
+            </div>
+          </div>
         </div>
         <div class="promo promo_3">
           <img src="./1010/imgs/don_belisario_promo_3.jpg" alt="Error">
+          <div class="info">
+            <div class="precio">
+              <h3 class="titulo">Promo Web 2</h3>
+              <p class="antes">Antes&nbsp;<del>S/. 119.90</del></p>
+              <p class="hoy">S/. 89.90</p>
+            </div>
+          </div>
         </div>
         <div class="promo promo_4">
           <img src="./1010/imgs/don_belisario_promo_4.jpg" alt="Error">
+          <div class="info">
+            <div class="precio">
+              <h3 class="titulo">Banquete Familiar</h3>
+              <p class="antes">Antes&nbsp;<del>S/. 154.90</del></p>
+              <p class="hoy">S/. 99.90</p>
+            </div>
+          </div>
         </div>
         <div class="promo promo_5">
           <img src="./1010/imgs/don_belisario_promo_5.jpg" alt="Error">
+          <div class="info">
+            <div class="precio">
+              <h3 class="titulo">Mega Banquete</h3>
+              <p class="antes">Antes&nbsp;<del>S/. 199.90</del></p>
+              <p class="hoy">S/. 139.90</p>
+            </div>
         </div>
+        </div>
+      </div>
+    </div>
+    <div class="menu__caja">
+      <h3>Carta</h3>
+      <div class="menu__lista">
+        <div class="entrada">
+          <div class="buscador">
+              <input type="text" id="formulario">
+              <hr>    
+          </div>
+          <button id="boton"></button>
+      </div>
+      </div>
+      <div class="proyectos" id="proyectos">
       </div>
     </div>
   </main>
