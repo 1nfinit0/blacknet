@@ -101,6 +101,41 @@ const files = [
       alt: 'No disponible',
       titulo: 'Pollo Brasa Don Beli',
       price: 'S/. 44.90'
+  },
+  {   src: './1010/unidades/13.jpg',
+      alt: 'No disponible',
+      titulo: 'Ensalada Cocida',
+      price: 'S/. 17.90'
+  },
+  {   src: './1010/unidades/14.jpg',
+      alt: 'No disponible',
+      titulo: 'Ensalada Fresca',
+      price: 'S/. 15.90'
+  },
+  {   src: './1010/unidades/15.jpg',
+      alt: 'No disponible',
+      titulo: 'Papas Crocantitas',
+      price: 'S/. 9.90'
+  },
+  {   src: './1010/unidades/16.jpg',
+      alt: 'No disponible',
+      titulo: 'Papas del Caporal Personal',
+      price: 'S/. 12.90'
+  },
+  {   src: './1010/unidades/17.jpg',
+      alt: 'No disponible',
+      titulo: 'Camotitos de la Abuelita Personal',
+      price: 'S/. 12.90'
+  },
+  {   src: './1010/unidades/18.jpg',
+      alt: 'No disponible',
+      titulo: 'Arroz Chaufa Personal',
+      price: 'S/. 9.90'
+  },
+  {   src: './1010/unidades/19.jpg',
+      alt: 'No disponible',
+      titulo: 'Arrocito de la Cacerola Personal',
+      price: 'S/. 9.90'
   }
 ]
 
